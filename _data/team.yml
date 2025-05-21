@@ -3,7 +3,7 @@
   position: 项目负责人
   avatar: /assets/images/zzy.jpg
   description: 拥有10年国际贸易经验，负责整体项目规划和客户关系管理。
-  email: 111111@g.com
+  email: 312847325@qq.com
 
 - name: 马瑞贤
   position: UI/UX设计师
@@ -17,11 +17,11 @@
   description: 精通HTML、CSS和JavaScript，负责系统界面设计和用户体验优化。
   email: 1670829233@qq.com
 
-- name: 111
+- name: 罗凯
   position: 后端开发工程师
-  avatar: /assets/images/avatar2.png
+  avatar: /assets/images/LLK.jpg
   description: Ruby和数据库专家，负责系统核心功能开发和数据处理。
-  email: 111
+  email: 126@lk.com
 
 - name: 杨信
   position: 物流顾问
