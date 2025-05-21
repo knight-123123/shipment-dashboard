@@ -110,8 +110,8 @@ title: 关于我们
           <div class="contact-text">support@shipment-dashboard.com</div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div class="contact-text">中国上海市浦东新区张江高科技园区</div>
+          <div class="contact区-icon">📍</div>
+          <div class="contact-text">ynu集团</div>
         </div>
       </div>
     </div>
