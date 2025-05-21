@@ -1,0 +1,24 @@
+# _data/team.yml
+- name: 123
+  position: 项目负责人
+  avatar: /assets/images/avatar1.png
+  description: 拥有10年国际贸易经验，负责整体项目规划和客户关系管理。
+  email: 123
+
+- name: 122
+  position: 前端开发工程师
+  avatar: /assets/images/avatar2.png
+  description: 精通HTML、CSS和JavaScript，负责系统界面设计和用户体验优化。
+  email: 122
+
+- name: 111
+  position: 后端开发工程师
+  avatar: /assets/images/avatar3.png
+  description: Ruby和数据库专家，负责系统核心功能开发和数据处理。
+  email: 111
+
+- name: 222
+  position: 物流顾问
+  avatar: /assets/images/avatar4.png
+  description: 国际物流专家，为系统提供专业的物流流程和状态追踪建议。
+  email: 222

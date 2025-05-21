@@ -1,18 +1,7 @@
-collections:
-  authors:
-    output: true
+title: 外贸发货看板
+description: 便捷高效的国际物流追踪系统
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
   - scope:
       path: ""
     values:
