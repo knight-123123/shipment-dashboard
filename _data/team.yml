@@ -29,14 +29,14 @@
   description: 国际物流专家，为系统提供专业的物流流程和状态追踪建议。
   email: 2077199050@qq.com
 
-- name: 444
+- name: 冯涛
   position: 数据分析师
-  avatar: /assets/images/avatar2.png
+  avatar: /assets/images/fengtao.png
   description: 专注于物流数据分析和可视化，为管理层提供数据驱动的决策支持。
-  email: 444
+  email: fengnofen@foxmail.com
 
-- name: 555
+- name: 白凯源
   position: 客户服务专员
   avatar: /assets/images/avatar2.png
   description: 负责与国际客户沟通，解决使用过程中的问题，收集用户反馈并提供支持。
-  email: 555
+  email: 184525578@qq.com
