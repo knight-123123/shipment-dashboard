@@ -31,7 +31,7 @@
 
 .team-members {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));  // 可能需要调整宽度
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -50,7 +50,7 @@
   }
   
   .member-avatar {
-    width: 120px;
+    width: 180px;
     background-size: cover;
     background-position: center;
     background-color: #f0f0f0;
