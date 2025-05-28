@@ -57,7 +57,7 @@ title: 添加运单
       
       <div class="form-actions">
         <button type="submit" class="btn-submit">提交 / Submit</button>
-        <a href="/shipments.html" class="btn-cancel">取消 / Cancel</a>
+        <a href="{{ '/shipments.html' | relative_url }}" class="btn-cancel">取消 / Cancel</a>
       </div>
     </form>
   </div>
@@ -69,7 +69,7 @@ title: 添加运单
       <p>运单已创建 / Shipment has been created</p>
       <p>运单号 / Tracking Number: <strong id="trackingNumber"></strong></p>
       <div class="modal-actions">
-        <a href="/shipments.html" class="btn-primary">查看所有运单 / View All Shipments</a>
+        <a href="{{ '/shipments.html' | relative_url }}" class="btn-primary">查看所有运单 / View All Shipments</a>
         <a href="#" id="viewShipmentLink" class="btn-secondary">查看此运单 / View This Shipment</a>
       </div>
     </div>

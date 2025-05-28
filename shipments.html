@@ -7,7 +7,7 @@ title: 运单列表
   <h1>外贸发货看板 / Shipment Dashboard</h1>
   
   <div class="dashboard-actions">
-    <a href="/add_shipment.html" class="btn-add">添加新运单 / Add New Shipment</a>
+    <a href="{{ '/add_shipment.html' | relative_url }}" class="btn-add">添加新运单 / Add New Shipment</a>
   </div>
   
   <!-- Filter controls -->
@@ -56,7 +56,7 @@ title: 运单列表
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">
               {% case shipment.status %}
                 {% when '未发货' %} 🟡 等待发货 / Pending
@@ -133,7 +133,7 @@ title: 运单列表
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">🟡 等待发货 / Pending</div>
           </div>
           
@@ -177,7 +177,7 @@ title: 运单列表
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">🚢 运输中 / In Transit</div>
           </div>
           
@@ -221,7 +221,7 @@ title: 运单列表
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">✅ 抵达目的港 / Arrived</div>
           </div>
           
@@ -265,7 +265,7 @@ title: 运单列表
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">📦 已提货 / Picked Up</div>
           </div>
           

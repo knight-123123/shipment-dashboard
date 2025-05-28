@@ -54,8 +54,8 @@ title: 外贸发货看板
   </div>
   
   <div class="dashboard-actions">
-    <a href="/shipments.html" class="btn btn-primary">查看所有运单</a>
-    <a href="/add_shipment.html" class="btn btn-secondary">添加新运单</a>
+    <a href="{{ '/shipments.html' | relative_url }}" class="btn btn-primary">查看所有运单</a>
+    <a href="{{ '/add_shipment.html' | relative_url }}" class="btn btn-secondary">添加新运单</a>
   </div>
   
   <div class="recent-shipments">
@@ -66,7 +66,7 @@ title: 外贸发货看板
         {% assign client = site.data.clients | where: "code", shipment.client_code | first %}
         <div class="shipment-card status-{{ shipment.status }}">
           <div class="shipment-header">
-            <h3><a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
+            <h3><a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">{{ shipment.tracking_number }}</a></h3>
             <div class="status-badge">
               {% case shipment.status %}
                 {% when '未发货' %} 🟡 等待发货
@@ -93,7 +93,7 @@ title: 外贸发货看板
             {% endif %}
           </div>
           <div class="card-action">
-            <a href="/shipment_detail.html?tracking={{ shipment.tracking_number }}">查看详情 &raquo;</a>
+            <a href="{{ '/shipment_detail.html' | relative_url }}?tracking={{ shipment.tracking_number }}">查看详情 &raquo;</a>
           </div>
         </div>
       {% endfor %}
