@@ -13,7 +13,7 @@ title: 我们的团队
   <div class="team-members">
     {% for member in site.data.team %}
       <div class="team-card">
-        <div class="member-avatar" style="background-image: url('{{ member.avatar | default: "/assets/images/default-avatar.png" }}')"></div>
+        <div class="member-avatar" style="background-image: url('{{ member.avatar | default: "/assets/images/default-avatar.png" | relative_url }}')"></div>
         <div class="member-info">
           <h2>{{ member.name }}</h2>
           <h3>{{ member.position }}</h3>
