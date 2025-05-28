@@ -1,8 +1,73 @@
+# 网站基本信息
 title: 外贸发货看板
 description: 便捷高效的国际物流追踪系统
+author: zzy
+lang: zh-CN
 
+# GitHub Pages 部署配置
+# 请将 'yourusername' 替换为您的GitHub用户名
+# 请将 'your-repo-name' 替换为您的仓库名
+url: "https://knight-123123.github.io"
+baseurl: "/shipment-dashboard"
+
+# SCSS/Sass 配置
+sass:
+  sass_dir: _sass
+  style: compressed  # 生产环境使用压缩样式
+  
+# Jekyll 插件
+plugins:
+  - jekyll-sass-converter
+  - jekyll-sitemap
+  - jekyll-feed
+
+# 默认布局设置
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# 包含的文件和目录
+include:
+  - _sass
+
+# 排除的文件和目录（这些不会被发布到网站）
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - .DS_Store
+
+# 时区设置
+timezone: Asia/Shanghai
+
+# 编码设置
+encoding: utf-8
+
+# 生产环境优化
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# SEO 优化（可选）
+google_analytics: "" # 如果需要Google Analytics，在引号内填入跟踪ID
+google_site_verification: "" # Google搜索控制台验证码
+
+# 社交媒体链接（可选）
+social:
+  email: "support@shipment-dashboard.com"
+  phone: "+86 123 4567 8910"
